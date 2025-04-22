@@ -15,3 +15,48 @@ Ejemplo:
 Input:  40773821 
 Output: ‘L’
  */
+
+const letras = [
+  "T",
+  "R",
+  "W",
+  "A",
+  "G",
+  "M",
+  "Y",
+  "F",
+  "P",
+  "D",
+  "X",
+  "B",
+  "N",
+  "J",
+  "Z",
+  "S",
+  "Q",
+  "V",
+  "H",
+  "L",
+  "C",
+  "K",
+  "E",
+];
+
+while (true) {
+  let numero = parseInt(prompt("Introduce tu número de DNI:"));
+
+  if (numero === null) {
+    break;
+  }
+  if (isNaN(numero) || numero < 0 || numero > 99999999) {
+    alert("Por favor, introduce un número válido entre 0 y 99999999.");
+  } else {
+    let resto = numero % 23;
+
+    let letra = letras[resto];
+
+    alert("La letra correspondiente a tu DNI es: " + letra);
+  }
+}
+
+alert("Has cancelado el proceso. ¡Hasta luego!");

@@ -8,3 +8,8 @@
 22
 1
  */
+for(let i=30; i>=1; i--){
+    for (let repeticiones=0; repeticiones < i; repeticiones ++)
+    document.writeln(i)
+    document.writeln("<br>")
+}
