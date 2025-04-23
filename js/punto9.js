@@ -14,3 +14,21 @@
 10
 
  */
+for (let i = 1; i <= 500; i++) {
+  document.writeln(i);
+  document.writeln("<br>");
+  let multiplode4 = i % 4 == 0;
+  let multiplode9 = i % 9 == 0;
+  if (multiplode4 && multiplode9) {
+    document.writeln(i + "(Es multiplo de 4 y de 9)");
+  } else if (multiplode4) {
+    document.writeln(i + "(Es multiplo de 4 )");
+  } else if (multiplode9) {
+    document.writeln(i + "(Es multiplo de 9)");
+  }
+
+  if (i % 5 == 0) {
+    document.writeln("--------")
+    
+  }
+}
