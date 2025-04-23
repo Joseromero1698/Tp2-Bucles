@@ -2,3 +2,20 @@
 
  */
 
+const filas = parseInt(prompt("ingrese el numero de filas"));
+const columnas = parseInt(prompt("ingrese el numero de columnas"));
+let numeroCelda = filas * columnas;
+document.writeln(`<table> 
+    <tbody>`);
+
+for (let indiceFilas = 0; indiceFilas < filas; indiceFilas++) {
+  document.writeln(`<tr>`);
+  for (let indiceColumnas = 0; indiceColumnas < filas; indiceColumnas++) {
+    document.writeln(`<td> ${numeroCelda} </td>`);
+    numeroCelda--;
+  }
+  document.writeln(`</tr>`);
+}
+
+document.writeln(`</tbody> 
+    </table>`);
