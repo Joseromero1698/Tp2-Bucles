@@ -8,3 +8,10 @@
 123456
 ……
  */
+let numero1 = parseInt(prompt("ingrese un numero del 1 al 50"))
+let numero2 = parseInt(prompt("ingrese otro numero del 1 al 50"))
+for (i =numero1; i<=numero2;i++){
+    for(let repeticiones=0; repeticiones<i;repeticiones++)
+    document.writeln(i)
+    document.writeln("<br>")
+}
